@@ -116,6 +116,7 @@
 					<div class="row">
 						<div class="col-md-4 text-left">
 			                <input type="submit" class="btn btn-primary" id="confirm-save" value="Save">
+							<input type="button" class="btn btn-primary" id="confirm-cancel" value="Cancel">
 						</div>
 						<div class="col-md-4 text-center">
 			                <input type="button" class="btn btn-warning" id="confirm-ignore" value="Ignore">
@@ -238,6 +239,14 @@
                 $('#modalReportEdit').find('.close').click();
                 location.reload();
             });
+        });
+		
+		$('#modalReportEdit').on('click','#confirm-cancel',function(e){
+            // e.preventDefault();
+            // var form = $('#formReportEdit');
+            // var input_key = form.find('input[name="key"]');
+                $('#modalReportEdit').find('.close').click();
+                location.reload();
         });
         
         $('#modalReportEdit').on('click','#confirm-ignore',function(e){
