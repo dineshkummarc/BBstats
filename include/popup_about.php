@@ -26,6 +26,15 @@
                 <p>
                 	I don't believe in license, you can do want you want with this program.
                 </p>
+				
+				<div class="modal-footer">
+					<div class="row">
+						<div class="col-md-6 text-left">
+							<input type="button" class="btn btn-primary" id="confirm-close" value="Close">
+						</div>
+					</div>
+	            </div>
+				
             </div>
         </div>
     </div>
@@ -36,6 +45,11 @@
         $('#about-btn').on('click', function(e) {
             e.preventDefault();
             $('#modalAbout').modal();
+        });
+		
+		$('#modalAbout').on('click','#confirm-close',function(e){
+                $('#modalAbout').find('.close').click();
+                location.reload();
         });
     });
 </script>
