@@ -117,6 +117,7 @@
 					<div class="row">
 						<div class="col-md-6 text-left">
 			                <input type="submit" class="btn btn-primary" id="confirm-save" value="Save">
+							<input type="button" class="btn btn-primary" id="confirm-cancel" value="Cancel">
 						</div>
 					</div>
 	            </div>
@@ -147,5 +148,11 @@
                 location.reload();
             });
         });
+		
+		$('#modalReportAdd').on('click','#confirm-cancel',function(e){
+                $('#modalReportAdd').find('.close').click();
+                location.reload();
+        });
+		
     });
 </script>
