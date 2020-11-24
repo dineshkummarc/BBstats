@@ -10,11 +10,9 @@ Put the code at the root of your web server:
 git clone https://github.com/gwen001/BBstats
 ```
 
-
 ### Auth
 
 Set environment variable `HACKERONE_USERNAME` and `HACKERONE_PASSWORD`
-
 
 ### Recommended usage
 Grab the datas from your favorite platform for the first time: *quick-init.sh*
@@ -67,31 +65,29 @@ Examples:
 You can choose which graph you want to display in `config.php`.  
 You create your own autotag and autorate configuration in `config.php`.  
 
-
 ### Todo
 __grabber__
-- add more platform (Bugcrowd, Cobalt)  
+- [ ] add more platform (Bugcrowd, Cobalt)  
 
 __db__
-- ?
+- [ ] add more db options (mysql, MSSQL)
 
 __web ui__
-- search engine filter: with/without bounty  
-- scrollbar fot both part, left and right  
-- calendar plugin for dates
+- [ ] search engine filter: with/without bounty  
+- [ ] scrollbar fot both part, left and right  
+- [ ] calendar plugin for dates
 
 __graph__
-- graph: bounties per month per program  
-- graph: bounties per month per type  
-- graph: bounties per month per platform  
-- graph: reports per month per program  
-- graph: reports per month per type  
-- graph: reports per month per platform  
-- graph: reports per status  
+- [ ] graph: bounties per month per program  
+- [ ] graph: bounties per month per type  
+- [ ] graph: bounties per month per platform  
+- [ ] graph: reports per month per program  
+- [ ] graph: reports per month per type  
+- [ ] graph: reports per month per platform  
+- [ ] graph: reports per status  
 
 __bugs__
-- probably alot!
-
+- [ ] probably alot!
 
 ### Samples
 <table>
@@ -115,4 +111,4 @@ __bugs__
 <br><br><br><br>
 
 I don't believe in license.  
-You can do want you want with this program.  
+You can do want you want with this program.
